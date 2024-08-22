@@ -1,0 +1,18 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const article = {
+    author: 'Max Lee',
+    date: '2024-08-22',
+    title: 'Status 2',
+    description:
+        'Status 2 kommer snart!.',
+}
+
+export const metadata = {
+    title: article.title,
+    description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+Status 2 kommer snart
