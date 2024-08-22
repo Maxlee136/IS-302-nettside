@@ -1,0 +1,23 @@
+import {ArticleLayout} from '@/components/ArticleLayout'
+import gruppeBilde from './Egde-gruppebilde.jpg'
+import Image from "next/image";
+
+export const article = {
+    author: 'Jeppe Stenstadvolden Strømberg',
+    date: '2024-08-22',
+    title: 'Oppstartsmøte med Egde Consulting',
+    description: 'Vi startet med et oppstartsmøte med Egde for å finne ut av praksis oppgaven til gruppen.',
+}
+
+export const metadata = {title: article.title, description: article.description,}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+Idag hadde gruppen oppstartsmøte med Egde. Møtet innneholdt en introduksjon av vår gruppe samt de ansatte i Egde som skal være våre kontaktpersoner. Denne artikkelen kommer til å gå nærmere på hvilket prosjekt gruppen skal jobbe med, og det generelle oppsettet av praksisperioden.
+
+<Image src={gruppeBilde} alt=""/>
+
+Her er vi inne på kontoret til Egde.
+
+Et spennende møte med KI
+Praksis gruppen med hjelp fra Michael og Lars, som er to ansatte i Egde, ble enige om prosjektet gruppen skulle jobbe med. Prosjektet vi skal jobbe med er basert på Azure AI og undersøkelse av markedets behov for denne teknologien. Planen er å jobbe med denne oppgaven i Egde sine lokaler hver tirsdag og torsdag, førstkommende tirsdag (27.08.24) er dermed datoen vi skal starte arbeidet. Som forbredelse til arbeidet vil gruppen tilegne seg kunnskap om Azure AI og dens bruksområder.
