@@ -1,0 +1,35 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import gruppeBilde from './image-6.jpg'
+import Image from "next/image";
+
+export const article = {
+  author: 'Max Lee',
+  date: '2024-09-13',
+  title: 'Status 1',
+  description:
+    'Status etter gruppens første periode i praksis.',
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+<h2>Litt om Egde:</h2>
+Egde tilbyr diverse tjenester til både det private og offentlige, dette inneholder rådgivning, prosjektledelse, utvikling, design, UX, tjenestedesign, drift, dataanalyse, test og kvalitetssikring, skytransformasjon, sikkerhet og digital transformasjon (Egde, U.Å.). For å kunne tilby en såpass omfattende tjenesteportefølje har Egde samlet mennesker med forskjellig bakgrunn, kompetanse og erfaringer, de har med andre ord en tverrfaglig tilnærming til alt de gjør. Egde har kontorer i Kristiansand, Grimstad, Porsgrunn og Tromsø. I 2023 hadde EGDE CONSULTING AS en omsetning på ca 149 millioner kroner (proff, 2024).
+
+<h2>Arbeidsoppgaver:</h2>
+Gruppens arbeidsoppgaver hos Egde inkluderer både arbeid med Azure og prosjekter innen kunstig intelligens (KI). Våre spesifikke oppgaver er konfidensielle, men de faller innenfor disse områdene. Vi har mottatt prosjekter fra Egdes kunder, og jobber for å oppfylle deres krav på best mulig måte.
+<Image src={gruppeBilde} alt=""/>
+<h2>Utfordringer:</h2>
+Vi har vært veldig heldige å få testet rykende fersk teknologi innen AI-feltet. Noe som har vært ekstremt spennende men også utfordrende. Det har vært gøy å få et selvstendig prosjekt, ettersom det gir oss frie tøyler til å komme med en løsning vi tror kan møte kundene sitt behov. Noen utfordringer som har oppstått er at ettersom teknologien er såpass ny finnes det lite dokumentasjon på internett. Vi har derfor vært veldig mye på egenhånd, noe som har vært krevende men også veldig lærerrikt.
+
+<h3>Kilder:</h3>
+<ul>
+<li> Egde.(U.Å.) Vi forener mennesker og teknologi.
+    https://egde.no/vi-jobber-med/</li>
+<li>proff.(U.Å.). EGDE CONSULTING AS.
+    https://www.proff.no/selskap/egde-consulting-as/grimstad/internettdesign-og-programmering/IF608W30C2C </li>
+</ul>
