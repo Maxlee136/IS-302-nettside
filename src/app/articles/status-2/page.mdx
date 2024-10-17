@@ -1,11 +1,15 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
+import IMG_1070 from './IMG_1070.jpg';
+import IMG_1071 from './IMG_1071.jpg';
+import IMG_1072 from './IMG_1072.jpg';
+import IMG_1073 from './IMG_1073.jpg';
+import Image from 'next/image';
 
 export const article = {
-    author: 'Max Lee',
-    date: '2024-08-22',
+    author: 'Jeppe Strømberg',
+    date: '2024-10-17',
     title: 'Status 2',
-    description:
-        'Status 2 kommer snart!.',
+    description: 'Status etter gruppens andre periode i praksis.',
 }
 
 export const metadata = {
@@ -13,6 +17,22 @@ export const metadata = {
     description: article.description,
 }
 
-export default (props) => <ArticleLayout article={article} {...props} />
+export default (props) => (
+    <ArticleLayout article={article} {...props}>
+        <h2>Arbeidsoppgaver:</h2>
+        <p>
+            Som nevnt i status 1, inkluderer gruppens arbeidsoppgaver hos Egde fortsatt arbeid med Azure og prosjekter innen kunstig intelligens (KI). Det spesifikke arbeidet vi holder på med er konfidensielt, men vi har gjort betydelige fremskritt. Gruppen har blant annet bygget en fungerende kundeservice-chatbot ved hjelp av Prompt Flow i Azure AI Studio. Vi jobber også med å integrere chatboten med en RAG-modell og koble den til en Cosmos DB, basert på et utarbeidet UML-diagram. En enkel frontend er utviklet som proof of concept, med wireframes som skisser, og er koblet til Prompt Flow. Dette arbeidet har vært både utfordrende og spennende, og vi ser frem til å se hvor langt vi kan komme – og om Egde vil kunne dra nytte av produktet vi har utviklet – når praksisperioden er over.
+        </p>
 
-Status 2 kommer snart
+        {/* Displaying the images */}
+        <Image src={IMG_1070} alt="Description of IMG_1070" />
+        <Image src={IMG_1072} alt="Description of IMG_1072" />
+
+        <h2>Utfordringer:</h2>
+        <p>
+            Som vi også nevnte i status 1, arbeider gruppen med helt ny teknologi innen AI-feltet. Dette medfører at det finnes begrenset informasjon om prosjektet vårt på nettet, noe som gjør at vi bruker ekstra tid på å løse mindre utfordringer. Vi møtte blant annet utfordringer med å koble Prompt Flow til frontenden vår, noe vi brukte en del tid på. Til slutt lyktes vi med integrasjonen. Dessverre er også detaljene rundt hvordan dette ble gjort konfidensielle
+        </p>
+        <Image src={IMG_1071} alt="Description of IMG_1071" />
+
+    </ArticleLayout>
+)
