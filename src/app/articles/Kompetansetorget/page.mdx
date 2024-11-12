@@ -1,0 +1,24 @@
+export const article = {
+    author: 'Jeppe Stenstadvolden Strømberg',
+    date: '2024-11-12',
+    title: 'Kompetansetorget Link',
+    description: 'Lenke til kompetansetoget',
+};
+
+export const metadata = {
+    title: article.title,
+    description: article.description,
+};
+
+import Link from 'next/link';
+
+export default function KompetansetorgetPage() {
+    return (
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh', textAlign: 'center' }}>
+            <p>{article.description}</p>
+            <Link href="https://kompetansetorget.uia.no/" target="_blank" rel="noopener noreferrer" style={{ fontSize: '1.2rem', color: '#0070f3' }}>
+                https://kompetansetorget.uia.no/
+            </Link>
+        </div>
+    );
+}
